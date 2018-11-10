@@ -23,5 +23,8 @@ test:
 production:
   <<: *default
   database: sample2app_production
-  username: root 
-  passward:
+  username: <%= Settings.database[:user_name] %>
+  password: <%= Settings.database[:password] %>
+  #username: root 
+  #passward:
+
