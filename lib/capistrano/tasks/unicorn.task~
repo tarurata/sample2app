@@ -4,8 +4,9 @@ namespace :unicorn do
     set :unicorn_config, "#{current_path}/config/unicorn.conf.rb"
   end
   def start_unicorn
+      puts 'this is puts statement'
+      execute "echo thisisshellemulatedbycapistrano"
     within current_path do
-      execute "echo hello world"
       execute :bundle, :exec, :unicorn, "-c #{fetch(:unicorn_config)} -E #{fetch(:rails_env)} -D"
     end
   end
