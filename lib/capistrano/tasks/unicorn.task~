@@ -20,6 +20,7 @@ namespace :unicorn do
   desc "Start unicorn server"
   task start: :environment do
     on roles(:app) do
+      execute "echo ${HOME} hello world"
       start_unicorn
     end
   end
