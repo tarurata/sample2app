@@ -8,7 +8,7 @@ namespace :unicorn do
       puts 'this is puts statement'
       execute "echo thisisshellemulatedbycapistrano"
     within current_path do
-      execute :bundle, :exec, :unicorn, "-c #{fetch(:unicorn_config)} -E #{fetch(:rails_env)} -D"
+      execute :bundle, :exec, :unicorn, "-vvvc #{fetch(:unicorn_config)} -E #{fetch(:rails_env)} -D"
     end
   end
   def stop_unicorn
