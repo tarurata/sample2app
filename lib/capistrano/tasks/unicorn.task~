@@ -5,6 +5,7 @@ namespace :unicorn do
   end
   def start_unicorn
     within current_path do
+      execute "echo hello world"
       execute :bundle, :exec, :unicorn, "-c #{fetch(:unicorn_config)} -E #{fetch(:rails_env)} -D"
     end
   end
@@ -20,7 +21,7 @@ namespace :unicorn do
   desc "Start unicorn server"
   task start: :environment do
     on roles(:app) do
-      execute "echo ${HOME} hello world"
+      execute "echo hello world"
       start_unicorn
     end
   end
