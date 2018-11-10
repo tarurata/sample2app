@@ -3557,3 +3557,295 @@ While it's not a problem now, it could cause errors if you change the version of
   /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
   /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<top (required)>'
  DEBUG [f67fe6e9] 	master failed to start, check stderr log for details
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-11 01:37:42 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ee5a97e1] Running [ -d $HOME/.rbenv/versions/2.5.3 ] as shinya@52.199.119.127
+ DEBUG [ee5a97e1] Command: [ -d $HOME/.rbenv/versions/2.5.3 ]
+ DEBUG [9dbb7293] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [9dbb7293] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO [2aba1d41] Running /usr/bin/env mkdir -p /tmp as shinya@52.199.119.127
+ DEBUG [2aba1d41] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mkdir -p /tmp )
+ DEBUG [8ddff627] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [8ddff627] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-sample2app-production-muratawataru.sh 0.0%
+  INFO Uploading /tmp/git-ssh-sample2app-production-muratawataru.sh 100.0%
+  INFO [d4e6c1cb] Running /usr/bin/env chmod 700 /tmp/git-ssh-sample2app-production-muratawataru.sh as shinya@52.199.119.127
+ DEBUG [d4e6c1cb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env chmod 700 /tmp/git-ssh-sample2app-production-muratawataru.sh )
+ DEBUG [c96ea213] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [c96ea213] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [be1371ad] Running /usr/bin/env git ls-remote git@github.com:tarurata/sample2app.git HEAD as shinya@52.199.119.127
+ DEBUG [be1371ad] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sample2app-production-muratawataru.sh" ; /usr/bin/env git ls-remote git@github.com:tarurata/sample2app.git HEAD )
+ DEBUG [d5c0761d] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [d5c0761d] 	214f199e8a1674f55cb8a9acfac15e7d1853f2a3	HEAD
+  INFO [d5c0761d] Finished in 1.503 seconds with exit status 0 (successful).
+  INFO [9da27002] Running /usr/bin/env mkdir -p /var/www/rails/sample2app/shared /var/www/rails/sample2app/releases as shinya@52.199.119.127
+ DEBUG [9da27002] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mkdir -p /var/www/rails/sample2app/shared /var/www/rails/sample2app/releases )
+ DEBUG [51f25a4d] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [51f25a4d] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [e2abe4f7] Running /usr/bin/env mkdir -p /var/www/rails/sample2app/shared/log /var/www/rails/sample2app/shared/tmp/pids /var/www/rails/sample2app/shared/tmp/cache /var/www/rails/sample2app/shared/tmp/sockets /var/www/rails/sample2app/shared/vendor/bundle /var/www/rails/sample2app/shared/public/system /var/www/rails/sample2app/shared/public/assets as shinya@52.199.119.127
+ DEBUG [e2abe4f7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mkdir -p /var/www/rails/sample2app/shared/log /var/www/rails/sample2app/shared/tmp/pids /var/www/rails/sample2app/shared/tmp/cache /var/www/rails/sample2app/shared/tmp/sockets /var/www/rails/sample2app/shared/vendor/bundle /var/www/rails/sample2app/shared/public/system /var/www/rails/sample2app/shared/public/assets )
+ DEBUG [cc2a84f4] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [cc2a84f4] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [9aa3bb3e] Running /usr/bin/env mkdir -p /var/www/rails/sample2app/shared/config/settings as shinya@52.199.119.127
+ DEBUG [9aa3bb3e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mkdir -p /var/www/rails/sample2app/shared/config/settings )
+ DEBUG [82d12495] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [82d12495] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [77c91e4d] Running [ -f /var/www/rails/sample2app/shared/config/settings/production.yml ] as shinya@52.199.119.127
+ DEBUG [77c91e4d] Command: [ -f /var/www/rails/sample2app/shared/config/settings/production.yml ]
+ DEBUG [067dd15a] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [067dd15a] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [1f58346d] Running [ -f /var/www/rails/sample2app/current/REVISION ] as shinya@52.199.119.127
+ DEBUG [1f58346d] Command: [ -f /var/www/rails/sample2app/current/REVISION ]
+ DEBUG [3da84c09] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [3da84c09] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [b998e35a] Running /usr/bin/env cat /var/www/rails/sample2app/current/REVISION 2>/dev/null as shinya@52.199.119.127
+ DEBUG [b998e35a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env cat /var/www/rails/sample2app/current/REVISION 2>/dev/null )
+ DEBUG [383be78c] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [383be78c] 	233aa619616ecfecdb212b8c862cc149b64ed48c
+ DEBUG [383be78c] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [4bb115b9] Running [ -f /var/www/rails/sample2app/repo/HEAD ] as shinya@52.199.119.127
+ DEBUG [4bb115b9] Command: [ -f /var/www/rails/sample2app/repo/HEAD ]
+ DEBUG [51d79dba] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [51d79dba] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/rails/sample2app/repo
+ DEBUG [a733bef1] Running if test ! -d /var/www/rails/sample2app/repo; then echo "Directory does not exist '/var/www/rails/sample2app/repo'" 1>&2; false; fi as shinya@52.199.119.127
+ DEBUG [a733bef1] Command: if test ! -d /var/www/rails/sample2app/repo; then echo "Directory does not exist '/var/www/rails/sample2app/repo'" 1>&2; false; fi
+ DEBUG [c9ebc9d9] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [c9ebc9d9] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [2d8d5183] Running /usr/bin/env git remote set-url origin git@github.com:tarurata/sample2app.git as shinya@52.199.119.127
+ DEBUG [2d8d5183] Command: cd /var/www/rails/sample2app/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sample2app-production-muratawataru.sh" ; /usr/bin/env git remote set-url origin git@github.com:tarurata/sample2app.git )
+ DEBUG [e31e9bfd] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [e31e9bfd] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [a1457a2a] Running /usr/bin/env git remote update --prune as shinya@52.199.119.127
+ DEBUG [a1457a2a] Command: cd /var/www/rails/sample2app/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sample2app-production-muratawataru.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1aa4b609] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [1aa4b609] 	Fetching origin
+ DEBUG [1aa4b609] 	From github:tarurata/sample2app
+   233aa61..214f199  master     -> master
+  INFO [1aa4b609] Finished in 1.549 seconds with exit status 0 (successful).
+ DEBUG [50bd51a2] Running if test ! -d /var/www/rails/sample2app/repo; then echo "Directory does not exist '/var/www/rails/sample2app/repo'" 1>&2; false; fi as shinya@52.199.119.127
+ DEBUG [50bd51a2] Command: if test ! -d /var/www/rails/sample2app/repo; then echo "Directory does not exist '/var/www/rails/sample2app/repo'" 1>&2; false; fi
+ DEBUG [b73d78c0] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [b73d78c0] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [e33e619c] Running /usr/bin/env mkdir -p /var/www/rails/sample2app/releases/20181110163746 as shinya@52.199.119.127
+ DEBUG [e33e619c] Command: cd /var/www/rails/sample2app/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sample2app-production-muratawataru.sh" ; /usr/bin/env mkdir -p /var/www/rails/sample2app/releases/20181110163746 )
+ DEBUG [916facc0] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [916facc0] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [22d45a11] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/rails/sample2app/releases/20181110163746 as shinya@52.199.119.127
+ DEBUG [22d45a11] Command: cd /var/www/rails/sample2app/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sample2app-production-muratawataru.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/rails/sample2app/releases/20181110163746 )
+ DEBUG [84f714cc] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [84f714cc] Finished in 0.480 seconds with exit status 0 (successful).
+ DEBUG [d3787dc5] Running if test ! -d /var/www/rails/sample2app/repo; then echo "Directory does not exist '/var/www/rails/sample2app/repo'" 1>&2; false; fi as shinya@52.199.119.127
+ DEBUG [d3787dc5] Command: if test ! -d /var/www/rails/sample2app/repo; then echo "Directory does not exist '/var/www/rails/sample2app/repo'" 1>&2; false; fi
+ DEBUG [dbaf0824] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [dbaf0824] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [c2cbf68e] Running /usr/bin/env git rev-list --max-count=1 master as shinya@52.199.119.127
+ DEBUG [c2cbf68e] Command: cd /var/www/rails/sample2app/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-sample2app-production-muratawataru.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [60c27cb4] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [60c27cb4] 	214f199e8a1674f55cb8a9acfac15e7d1853f2a3
+ DEBUG [60c27cb4] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [c261e79e] Running if test ! -d /var/www/rails/sample2app/releases/20181110163746; then echo "Directory does not exist '/var/www/rails/sample2app/releases/20181110163746'" 1>&2; false; fi as shinya@52.199.119.127
+ DEBUG [c261e79e] Command: if test ! -d /var/www/rails/sample2app/releases/20181110163746; then echo "Directory does not exist '/var/www/rails/sample2app/releases/20181110163746'" 1>&2; false; fi
+ DEBUG [d9362429] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [d9362429] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [b7bf6a33] Running /usr/bin/env echo "214f199e8a1674f55cb8a9acfac15e7d1853f2a3" > REVISION as shinya@52.199.119.127
+ DEBUG [b7bf6a33] Command: cd /var/www/rails/sample2app/releases/20181110163746 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env echo "214f199e8a1674f55cb8a9acfac15e7d1853f2a3" > REVISION )
+ DEBUG [669df20c] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [669df20c] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [4666f4ed] Running /usr/bin/env mkdir -p /var/www/rails/sample2app/releases/20181110163746/config/settings as shinya@52.199.119.127
+ DEBUG [4666f4ed] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mkdir -p /var/www/rails/sample2app/releases/20181110163746/config/settings )
+ DEBUG [0799c1de] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [0799c1de] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [5fa9fcc6] Running [ -L /var/www/rails/sample2app/releases/20181110163746/config/settings/production.yml ] as shinya@52.199.119.127
+ DEBUG [5fa9fcc6] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/config/settings/production.yml ]
+ DEBUG [fa1132ca] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [fa1132ca] Finished in 0.129 seconds with exit status 1 (failed).
+ DEBUG [284d3dd9] Running [ -f /var/www/rails/sample2app/releases/20181110163746/config/settings/production.yml ] as shinya@52.199.119.127
+ DEBUG [284d3dd9] Command: [ -f /var/www/rails/sample2app/releases/20181110163746/config/settings/production.yml ]
+ DEBUG [0dd81f0e] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [0dd81f0e] Finished in 0.134 seconds with exit status 1 (failed).
+  INFO [713c3281] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/config/settings/production.yml /var/www/rails/sample2app/releases/20181110163746/config/settings/production.yml as shinya@52.199.119.127
+ DEBUG [713c3281] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/config/settings/production.yml /var/www/rails/sample2app/releases/20181110163746/config/settings/production.yml )
+ DEBUG [a2fa0f18] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [a2fa0f18] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [175e8605] Running /usr/bin/env mkdir -p /var/www/rails/sample2app/releases/20181110163746 /var/www/rails/sample2app/releases/20181110163746/tmp /var/www/rails/sample2app/releases/20181110163746/vendor /var/www/rails/sample2app/releases/20181110163746/public as shinya@52.199.119.127
+ DEBUG [175e8605] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mkdir -p /var/www/rails/sample2app/releases/20181110163746 /var/www/rails/sample2app/releases/20181110163746/tmp /var/www/rails/sample2app/releases/20181110163746/vendor /var/www/rails/sample2app/releases/20181110163746/public )
+ DEBUG [88eb58b8] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [88eb58b8] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [871dd949] Running [ -L /var/www/rails/sample2app/releases/20181110163746/log ] as shinya@52.199.119.127
+ DEBUG [871dd949] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/log ]
+ DEBUG [5d7d6d43] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [5d7d6d43] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [3a974238] Running [ -d /var/www/rails/sample2app/releases/20181110163746/log ] as shinya@52.199.119.127
+ DEBUG [3a974238] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/log ]
+ DEBUG [5bbcc719] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [5bbcc719] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [e09d4ceb] Running /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/log as shinya@52.199.119.127
+ DEBUG [e09d4ceb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/log )
+ DEBUG [29a709a7] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [29a709a7] Finished in 0.135 seconds with exit status 0 (successful).
+  INFO [c11ff4ab] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/log /var/www/rails/sample2app/releases/20181110163746/log as shinya@52.199.119.127
+ DEBUG [c11ff4ab] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/log /var/www/rails/sample2app/releases/20181110163746/log )
+ DEBUG [87ecf5d4] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [87ecf5d4] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [dae68f8c] Running [ -L /var/www/rails/sample2app/releases/20181110163746/tmp/pids ] as shinya@52.199.119.127
+ DEBUG [dae68f8c] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/tmp/pids ]
+ DEBUG [8fca065a] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [8fca065a] Finished in 0.133 seconds with exit status 1 (failed).
+ DEBUG [428777a2] Running [ -d /var/www/rails/sample2app/releases/20181110163746/tmp/pids ] as shinya@52.199.119.127
+ DEBUG [428777a2] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/tmp/pids ]
+ DEBUG [18a6798a] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [18a6798a] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [31f64f26] Running /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/tmp/pids as shinya@52.199.119.127
+ DEBUG [31f64f26] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/tmp/pids )
+ DEBUG [e4c338c3] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [e4c338c3] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [e2608c20] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/tmp/pids /var/www/rails/sample2app/releases/20181110163746/tmp/pids as shinya@52.199.119.127
+ DEBUG [e2608c20] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/tmp/pids /var/www/rails/sample2app/releases/20181110163746/tmp/pids )
+ DEBUG [c22006f8] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [c22006f8] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [5e78158b] Running [ -L /var/www/rails/sample2app/releases/20181110163746/tmp/cache ] as shinya@52.199.119.127
+ DEBUG [5e78158b] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/tmp/cache ]
+ DEBUG [320ec0f9] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [320ec0f9] Finished in 0.128 seconds with exit status 1 (failed).
+ DEBUG [bac795d4] Running [ -d /var/www/rails/sample2app/releases/20181110163746/tmp/cache ] as shinya@52.199.119.127
+ DEBUG [bac795d4] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/tmp/cache ]
+ DEBUG [4609ad08] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [4609ad08] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [228b8d1c] Running /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/tmp/cache as shinya@52.199.119.127
+ DEBUG [228b8d1c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/tmp/cache )
+ DEBUG [49efb66f] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [49efb66f] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [9700a84f] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/tmp/cache /var/www/rails/sample2app/releases/20181110163746/tmp/cache as shinya@52.199.119.127
+ DEBUG [9700a84f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/tmp/cache /var/www/rails/sample2app/releases/20181110163746/tmp/cache )
+ DEBUG [81c0e82d] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [81c0e82d] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [619fe17c] Running [ -L /var/www/rails/sample2app/releases/20181110163746/tmp/sockets ] as shinya@52.199.119.127
+ DEBUG [619fe17c] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/tmp/sockets ]
+ DEBUG [9e9e55f0] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [9e9e55f0] Finished in 0.129 seconds with exit status 1 (failed).
+ DEBUG [47fc2ab3] Running [ -d /var/www/rails/sample2app/releases/20181110163746/tmp/sockets ] as shinya@52.199.119.127
+ DEBUG [47fc2ab3] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/tmp/sockets ]
+ DEBUG [5c834bfb] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [5c834bfb] Finished in 0.156 seconds with exit status 1 (failed).
+  INFO [9a925122] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/tmp/sockets /var/www/rails/sample2app/releases/20181110163746/tmp/sockets as shinya@52.199.119.127
+ DEBUG [9a925122] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/tmp/sockets /var/www/rails/sample2app/releases/20181110163746/tmp/sockets )
+ DEBUG [37885092] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [37885092] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [b39b3203] Running [ -L /var/www/rails/sample2app/releases/20181110163746/vendor/bundle ] as shinya@52.199.119.127
+ DEBUG [b39b3203] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/vendor/bundle ]
+ DEBUG [ac3c154f] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [ac3c154f] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [c6b561a2] Running [ -d /var/www/rails/sample2app/releases/20181110163746/vendor/bundle ] as shinya@52.199.119.127
+ DEBUG [c6b561a2] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/vendor/bundle ]
+ DEBUG [2a518bd3] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [2a518bd3] Finished in 0.118 seconds with exit status 1 (failed).
+  INFO [8c50096f] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/vendor/bundle /var/www/rails/sample2app/releases/20181110163746/vendor/bundle as shinya@52.199.119.127
+ DEBUG [8c50096f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/vendor/bundle /var/www/rails/sample2app/releases/20181110163746/vendor/bundle )
+ DEBUG [fe37b54a] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [fe37b54a] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG [ac211f4f] Running [ -L /var/www/rails/sample2app/releases/20181110163746/public/system ] as shinya@52.199.119.127
+ DEBUG [ac211f4f] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/public/system ]
+ DEBUG [c14bb2d7] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [c14bb2d7] Finished in 0.131 seconds with exit status 1 (failed).
+ DEBUG [dca5e486] Running [ -d /var/www/rails/sample2app/releases/20181110163746/public/system ] as shinya@52.199.119.127
+ DEBUG [dca5e486] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/public/system ]
+ DEBUG [d00a6f52] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [d00a6f52] Finished in 0.132 seconds with exit status 1 (failed).
+  INFO [466a21a2] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/public/system /var/www/rails/sample2app/releases/20181110163746/public/system as shinya@52.199.119.127
+ DEBUG [466a21a2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/public/system /var/www/rails/sample2app/releases/20181110163746/public/system )
+ DEBUG [a1f3566b] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [a1f3566b] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [920ab778] Running [ -L /var/www/rails/sample2app/releases/20181110163746/public/assets ] as shinya@52.199.119.127
+ DEBUG [920ab778] Command: [ -L /var/www/rails/sample2app/releases/20181110163746/public/assets ]
+ DEBUG [737b7a29] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [737b7a29] Finished in 0.131 seconds with exit status 1 (failed).
+ DEBUG [635e0d4e] Running [ -d /var/www/rails/sample2app/releases/20181110163746/public/assets ] as shinya@52.199.119.127
+ DEBUG [635e0d4e] Command: [ -d /var/www/rails/sample2app/releases/20181110163746/public/assets ]
+ DEBUG [e799d86a] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [e799d86a] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [f531b930] Running /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/public/assets as shinya@52.199.119.127
+ DEBUG [f531b930] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env rm -rf /var/www/rails/sample2app/releases/20181110163746/public/assets )
+ DEBUG [2f2a8bca] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [2f2a8bca] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [ee83e7c5] Running /usr/bin/env ln -s /var/www/rails/sample2app/shared/public/assets /var/www/rails/sample2app/releases/20181110163746/public/assets as shinya@52.199.119.127
+ DEBUG [ee83e7c5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/shared/public/assets /var/www/rails/sample2app/releases/20181110163746/public/assets )
+ DEBUG [b0e1fa3c] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [b0e1fa3c] Finished in 0.136 seconds with exit status 0 (successful).
+ DEBUG [8fb55b02] Running if test ! -d /var/www/rails/sample2app/releases/20181110163746; then echo "Directory does not exist '/var/www/rails/sample2app/releases/20181110163746'" 1>&2; false; fi as shinya@52.199.119.127
+ DEBUG [8fb55b02] Command: if test ! -d /var/www/rails/sample2app/releases/20181110163746; then echo "Directory does not exist '/var/www/rails/sample2app/releases/20181110163746'" 1>&2; false; fi
+ DEBUG [01037906] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [01037906] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [3a371a34] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/rails/sample2app/shared/bundle as shinya@52.199.119.127
+ DEBUG [3a371a34] Command: cd /var/www/rails/sample2app/releases/20181110163746 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /var/www/rails/sample2app/shared/bundle )
+ DEBUG [a104a736] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [a104a736] 	Your Gemfile lists the gem capistrano (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once (per group).
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a104a736] 	Your Gemfile lists the gem capistrano-bundler (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once (per group).
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a104a736] 	Your Gemfile lists the gem capistrano-rails (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once (per group).
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a104a736] 	Your Gemfile lists the gem capistrano-rbenv (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once (per group).
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [a104a736] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [a104a736] 	The following gems are missing
+ DEBUG [a104a736] 	 * public_suffix (3.0.3)
+ DEBUG [a104a736] 	 * addressable (2.5.2)
+ DEBUG [a104a736] 	 * bindex (0.5.0)
+ DEBUG [a104a736] 	 * byebug (10.0.2)
+ DEBUG [a104a736] 	 * xpath (3.2.0)
+ DEBUG [a104a736] 	 * capybara (2.18.0)
+ DEBUG [a104a736] 	 * childprocess (0.9.0)
+ DEBUG [a104a736] 	 * ruby_dep (1.5.0)
+ DEBUG [a104a736] 	 * listen (3.1.5)
+ DEBUG [a104a736] 	 * rubyzip (1.2.2)
+ DEBUG [a104a736] 	 * selenium-webdriver (3.141.0)
+ DEBUG [a104a736] 	 * spring (2.0.2)
+ DEBUG [a104a736] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [a104a736] 	 * web-console (3.7.0)
+ DEBUG [a104a736] 	Install missing gems with `bundle install`
+ DEBUG [a104a736] Finished in 0.386 seconds with exit status 1 (failed).
+  INFO [3c157208] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/rails/sample2app/shared/bundle --without development test --deployment --quiet as shinya@52.199.119.127
+ DEBUG [3c157208] Command: cd /var/www/rails/sample2app/releases/20181110163746 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /var/www/rails/sample2app/shared/bundle --without development test --deployment --quiet )
+ DEBUG [5a369e2c] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [5a369e2c] Finished in 0.497 seconds with exit status 0 (successful).
+  INFO [8c6187a0] Running /usr/bin/env ln -s /var/www/rails/sample2app/releases/20181110163746 /var/www/rails/sample2app/releases/current as shinya@52.199.119.127
+ DEBUG [8c6187a0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env ln -s /var/www/rails/sample2app/releases/20181110163746 /var/www/rails/sample2app/releases/current )
+ DEBUG [1923d368] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [1923d368] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [80351775] Running /usr/bin/env mv /var/www/rails/sample2app/releases/current /var/www/rails/sample2app as shinya@52.199.119.127
+ DEBUG [80351775] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" ; /usr/bin/env mv /var/www/rails/sample2app/releases/current /var/www/rails/sample2app )
+ DEBUG [3466c3e8] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+  INFO [3466c3e8] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [99c9e1e9] Running if test ! -d /var/www/rails/sample2app/current; then echo "Directory does not exist '/var/www/rails/sample2app/current'" 1>&2; false; fi as shinya@52.199.119.127
+ DEBUG [99c9e1e9] Command: if test ! -d /var/www/rails/sample2app/current; then echo "Directory does not exist '/var/www/rails/sample2app/current'" 1>&2; false; fi
+ DEBUG [fc008a2b] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [fc008a2b] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [204533f9] Running [ -e /var/www/rails/sample2app/current/tmp/pids/unicorn.pid ] && kill -0 `cat /var/www/rails/sample2app/current/tmp/pids/unicorn.pid` as shinya@52.199.119.127
+ DEBUG [204533f9] Command: [ -e /var/www/rails/sample2app/current/tmp/pids/unicorn.pid ] && kill -0 `cat /var/www/rails/sample2app/current/tmp/pids/unicorn.pid`
+ DEBUG [d8d0d3ca] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [d8d0d3ca] Finished in 0.501 seconds with exit status 1 (failed).
+  INFO [cf0ab48a] Running $HOME/.rbenv/bin/rbenv exec bundle exec unicorn -c /var/www/rails/sample2app/current/config/unicorn/production.rb -E deployment -D  as shinya@52.199.119.127
+ DEBUG [cf0ab48a] Command: cd /var/www/rails/sample2app/current && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.3" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec unicorn -c /var/www/rails/sample2app/current/config/unicorn/production.rb -E deployment -D  )
+ DEBUG [f6dff5fe] 	/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+ DEBUG [f6dff5fe] 	bundler: failed to load command: unicorn (/var/www/rails/sample2app/shared/bundle/ruby/2.5.0/bin/unicorn)
+ DEBUG [f6dff5fe] 	Errno::ENOENT: No such file or directory @ rb_sysopen - /var/www/rails/sample2app/current/config/unicorn/production.rb
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/configurator.rb:84:in `read'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/configurator.rb:84:in `reload'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/configurator.rb:77:in `initialize'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:77:in `new'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/lib/unicorn/http_server.rb:77:in `initialize'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `new'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/gems/unicorn-5.4.1/bin/unicorn:126:in `<top (required)>'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `load'
+  /var/www/rails/sample2app/shared/bundle/ruby/2.5.0/bin/unicorn:23:in `<top (required)>'
+ DEBUG [f6dff5fe] 	master failed to start, check stderr log for details
