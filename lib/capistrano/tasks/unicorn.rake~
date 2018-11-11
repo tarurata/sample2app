@@ -1,4 +1,5 @@
-aaaadfsfsdfsd
+require 'sshkit'
+sldgdgsgsagsagdazoinaw/e
 namespace :unicorn do
   task :environment do
     set :unicorn_pid,    "#{current_path}/tmp/pids/unicorn.pid"
